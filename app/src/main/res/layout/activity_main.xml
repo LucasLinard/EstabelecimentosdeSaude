@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resultado_busca"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tech.linard.android.estabelecimentosdesaude.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:theme="@style/ThemeOverlay.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uf"/>
+        <Spinner
+            android:id="@+id/spinner_uf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="match_parent">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:theme="@style/ThemeOverlay.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/especialidade"/>
+        <Spinner
+            android:id="@+id/spinner_especialidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:theme="@style/ThemeOverlay.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categoria"/>
+        <Spinner
+            android:id="@+id/spinner_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+
+    <CheckBox
+        android:paddingTop="04dp"
+        android:paddingBottom="04dp"
+        android:theme="@style/ThemeOverlay.Spinner"
+        android:id="@+id/checkbox_vinculo_sus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vinculo_sus"/>
+
+    <Button
+        android:layout_margin="16dp"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        android:id="@+id/btn_pesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesquisar"/>
+
+    <Button
+        android:layout_margin="16dp"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        android:id="@+id/btn_open_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abrir_mapa"/>
+
+
+    <FrameLayout
+        android:id="@+id/frame_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+</LinearLayout>

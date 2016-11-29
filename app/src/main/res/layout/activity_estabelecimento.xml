@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_estabelecimento"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tech.linard.android.estabelecimentosdesaude.activities.EstabelecimentoActivity">
+    <TextView
+        android:theme="@style/ThemeOverlay.MyTitleText"
+        android:id="@+id/detail_nome_fantasia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="CLINICA DERMATOLOGICA DR JOSE GOMES SILVA"/>
+    <TextView
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/detail_turno"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Atendimento nos turnos da manhã e à tarde."/>
+    <LinearLayout
+        android:padding="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/ThemeOverlay.EstabelecimentoDetail"
+            android:text="Telefone: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/ThemeOverlay.EstabelecimentoDetail"
+            android:id="@+id/detail_telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            tools:text="35612449"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/ThemeOverlay.EstabelecimentoDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Endereço:"/>
+            <TextView
+                style="@style/ThemeOverlay.EstabelecimentoDetail"
+                android:id="@+id/detail_endereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="SHCSW CHSW SNssssssssssssssssssssss BL 03 04 E 05 SALA 123, sudoeste brasilia df"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/img_endereço"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_place_black_24dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/especialidades"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/ThemeOverlay.EstabelecimentoDetail"
+            android:id="@+id/txt_especialidades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especialidades:"/>
+    </LinearLayout>
+</LinearLayout>

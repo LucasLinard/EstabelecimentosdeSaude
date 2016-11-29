@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:minWidth="24dp"
+        android:minHeight="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_person_white"
+        android:id="@+id/list_item_image"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_nome_fantasia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="CLINICA DERMATOLOGICA DR JOSE GOMES SILVA"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal|bold" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/txt_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Consultório"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txt_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                tools:text="Asa Sul"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
